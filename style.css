@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    background: pink;
+    margin: 4px;
+    padding: 4px;
+    border: 2px dotted salmon;
+  }
+  
+  .shiba-gang, 
+  .shiba-gang-1, 
+  .shiba-gang-2,
+  .shiba-gang-3 {
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px dashed black;
+    background: salmon;
+    padding: 4px;
+  }
+  
+  .shiba-gang-1 {
+    margin-left: auto;
+  }
+  
+  
+  .main-container {
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 320px;
+    height: 200px;
+    background: salmon;
+    display: flex;
+    gap: 8px;
+    border: 8px solid pink;
+    text-align: center;
+  }
+  
+  .flex-item, 
+  .flex-item-1 {
+    flex: 1;
+    background: plum;
+    padding: 8px;
+  }
+  
+  .flex-item {
+    border: 10px;
+    max-height: 200px;
+  }
+  
+  .flex-item-1 {
+    width: 10px;
+  }
+  
