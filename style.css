@@ -1,56 +1,201 @@
-* {
+* { 
     box-sizing: border-box;
   }
+
+html {
+  scroll-behavior: smooth;
+}
   
+  body {
+    display: flex;
+    min-height: 100vh;
+    max-width: 100%;
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2937;  
+    flex-shrink: 0;  
+    
+  }
+  .header, .header-box {
+    margin: 20px 120px 20px 120px;
+  }
   .header {
     display: flex;
-    background: pink;
-    margin: 4px;
-    padding: 4px;
-    border: 2px dotted salmon;
-  }
-  
-  .shiba-gang, 
-  .shiba-gang-1, 
-  .shiba-gang-2,
-  .shiba-gang-3 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: 900;
     font-size: 24px;
-    font-weight: bold;
-    border: 2px dashed black;
-    background: salmon;
-    padding: 4px;
+    padding: 12px;
+    max-width: 100%;
+    flex-basis: 100%;
   }
-  
-  .shiba-gang-1 {
-    margin-left: auto;
+
+  .logo {
+    filter: invert(100%);
   }
-  
-  
-  .main-container {
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 320px;
-    height: 200px;
-    background: salmon;
+
+  .right-links {
     display: flex;
-    gap: 8px;
-    border: 8px solid pink;
+    list-style-type: none;
+
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+
+  li {
+    margin-left: 2px;
+    margin-right: 2px;
+    display: inline;
+  }
+
+  .header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .main-text {
+    color: white;
+    font-weight: 900;
+    font-size: 48px;
+  }
+  .left-content, .right-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-content p {
+    color: #e3e7eb;
+    font-size: 22px;
+    font-style: oblique;
+  }
+
+  .sign-up-button-1, .sign-up-button-2 {
+    color: white;
+    background-color: #3882F6;
+    width: 120px;
+    padding: 1px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .sign-up-button-1 {
+    border: #3882F6 solid 2px;
+  }
+
+  .sign-up-button-2 {
+    border: white solid 2px;
+  }
+
+  .right-content img {
+    max-width: 400px;
+    max-height: 400px;
+    box-shadow: 2px 2px 5px white;
+    border-radius: 10%;
+  }
+
+
+
+  #team h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    color: #1f2937;
+
+  }
+
+  .team-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .team-container p {
+    font-size: 22px;
+    font-style: oblique;
+  }
+
+
+  .team-container img {
+    border: solid #3882F6 4px;
+    border-radius: 20px;
+    width: 220px;
+    height: 200px;
+
+  }
+
+   .shiba {
+    max-width: 300px;
     text-align: center;
   }
-  
-  .flex-item, 
-  .flex-item-1 {
-    flex: 1;
-    background: plum;
-    padding: 8px;
+
+
+  #quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB; 
+    justify-content: center;
+    align-items: center;
+    padding: 6em 12em 6em 12em;
+
   }
-  
-  .flex-item {
-    border: 10px;
-    max-height: 200px;
+
+  #quote p {
+    font-size: 28px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937; 
   }
-  
-  .flex-item-1 {
-    width: 10px;
+
+  .quote-author {
+    align-self: flex-end;
+    font-size: 22px;
+    font-weight: bold;
   }
-  
+
+ 
+  #sign-up {
+    margin: 3em auto;
+    max-width: 40em;
+    background-color: #3882F6;
+    padding: 2em 4em 2em 4em;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .sign-up-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+
+  .left-text .strong-text {
+    font-weight: bold;
+  }
+
+  .left-text .normal-text {
+    font-size: 18px;
+  }
+
+  .footer {
+  display: flex;
+  justify-content: center;
+  background-color: #1f2937;
+  color: gainsboro;
+  font-size: 18px;
+  font-weight: 100;
+  padding: 24px;
+
+  }
